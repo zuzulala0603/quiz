@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: hide;
+}
+
+.flex {
+  display: flex;
+}
+.block {
+  display: block;
+}

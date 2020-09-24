@@ -3,12 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/root.css" />
+    <link rel="stylesheet" href="/static/css/layouts.css" />
+    <link rel="stylesheet" href="/static/css/intro.css" />
+    <link rel="stylesheet" href="/static/css/round.css" />
+    <link rel="stylesheet" href="/static/css/quiz.css" />
+    <link rel="stylesheet" href="/static/css/card.css" />
+    <link rel="stylesheet" href="/static/css/result.css" />
     <title>Document</title>
   </head>
   <body>
-    <section id="intro"></section>
-    <section id="round"></section>
-    <section id="main"></section>
-    <section id="result"></section>
+    <section id="intro" class="main">
+      <div id="playBtn">시작하기</div>
+    </section>
+    <section id="round" class="main">
+      <div id="round__title"></div>
+    </section>
+    <section id="quiz" class="main">
+      <div id="quiz__question"></div>
+      <div id="quiz__answer">
+        <div id="quiz__answer__useranswer"></div>
+        <div id="quiz__answer__example">
+          <div class="quiz__answer__example__line">
+            <div class="quiz__example__card" data-example="1"></div>
+            <div class="quiz__example__card" data-example="2"></div>
+            <div class="quiz__example__card" data-example="3"></div>
+            <div class="quiz__example__card" data-example="4"></div>
+            <div id="quiz__backspace"></div>
+          </div>
+          <div class="quiz__answer__example__line">
+            <div class="quiz__example__card" data-example="6"></div>
+            <div class="quiz__example__card" data-example="7"></div>
+            <div class="quiz__example__card" data-example="8"></div>
+            <div class="quiz__example__card" data-example="9"></div>
+            <div class="quiz__example__card" data-example="10"></div>
+          </div>
+          <div class="quiz__answer__example__line">
+            <div class="quiz__example__card" data-example="11"></div>
+            <div class="quiz__example__card" data-example="12"></div>
+            <div class="quiz__example__card" data-example="13"></div>
+            <div class="quiz__example__card" data-example="14"></div>
+            <div class="quiz__example__card" data-example="15"></div>
+          </div>
+        </div>
+        <div id="quiz__answer__btnline"></div>
+      </div>
+    </section>
+    <section id="result" class="main">리졸트</section>
+    <!-- javascript -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/js/var.js"></script>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/intro.js"></script>
+    <script src="/static/js/round.js"></script>
+    <script src="/static/js/quiz.js"></script>
   </body>
 </html>

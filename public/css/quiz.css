@@ -1,0 +1,38 @@
+#quiz {
+  display: none;
+}
+
+#quiz__question {
+  height: 40%;
+  background-color: rebeccapurple;
+}
+
+#quiz__answer {
+  height: 60%;
+  background-color: beige;
+}
+
+#quiz__answer__useranswer {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: brown;
+}
+
+#quiz__answer__example {
+  height: 60%;
+  background-color: #f0f0f0;
+}
+
+.quiz__answer__example__line {
+  display: flex;
+  height: 33%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: cadetblue;
+}
+#quiz__answer__btnline {
+  height: 20%;
+  background-color: #ff9999;
+}

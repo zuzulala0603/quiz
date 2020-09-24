@@ -1,0 +1,20 @@
+.quiz__example__card {
+  width: 17%;
+  height: 70%;
+  background-color: beige;
+  border-radius: 0.5rem;
+}
+
+#quiz__backspace {
+  width: 17%;
+  height: 70%;
+  background-color: black;
+  border-radius: 0.5rem;
+}
+
+.quiz__answer__card {
+  width: 17%;
+  height: 68%;
+  background-color: beige;
+  border-radius: 0.5rem;
+}
