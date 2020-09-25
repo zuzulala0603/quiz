@@ -12,6 +12,7 @@ let resultPage = document.getElementById("result")
 
 /* Btn */
 let playBtn = document.getElementById("playBtn")
+let submitBtn = document.getElementById("submitBtn")
 
 /* round */
 let round = 0
@@ -21,6 +22,14 @@ let round = 0
 let quizExample = document.querySelectorAll(".quiz__example__card")
 let backspace = document.getElementById("quiz__backspace")
 let answerLength = 0
+/* quiz data */
+let basicArray = [1, 2, 3, 4, 5]
+let questionArray = ["문제"]
+let answerArray = ["정답"]
+let currentQuestion = ""
+let currentAnswer = ""
+let cardLetters = []
+let paddingLetters = ["가", "나", "다", "라", "마", "바", "사", "아", "자", "차", "카", "타", "파", "하"]
 
 /* layout */
 if (w > 1024) {

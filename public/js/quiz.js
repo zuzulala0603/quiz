@@ -1,5 +1,5 @@
 quizExample.forEach(element => {
-  element.addEventListener("click", () => {
+  element.addEventListener("click", e => {
     answerLength++
     if (answerLength >= 6) {
       for (let i = 1; i < answerLength - 4; i++) {
@@ -8,9 +8,10 @@ quizExample.forEach(element => {
       }
     }
     let newAnserCard = document.createElement("div")
-    newAnserCard.classList.add("quiz__answer__card")
+    newAnserCard.classList.add("quiz__answer__card", "card")
     newAnserCard.setAttribute("data-answerlength", answerLength)
-    newAnserCard.innerHTML = answerLength
+    newAnserCard.innerHTML = e.target.innerHTML
+    console.log(e.target)
     document.getElementById("quiz__answer__useranswer").appendChild(newAnserCard)
   })
 })
@@ -23,7 +24,7 @@ backspace.addEventListener("click", () => {
   }
   if (answerLength >= 6) {
     let showingTarget = document.querySelector(`[data-answerlength="${answerLength - 5}"]`)
-    block(showingTarget)
+    flex(showingTarget)
   }
   let removingTarget = document.querySelector(`[data-answerlength="${answerLength}"]`)
   document.getElementById("quiz__answer__useranswer").removeChild(removingTarget)
