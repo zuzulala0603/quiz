@@ -26,15 +26,24 @@ let answerLength = 0
 let basicArray = [1, 2, 3, 4, 5]
 let questionArray = ["문제"]
 let answerArray = ["정답"]
+let imgSrcArray = ["이미지경로"]
 let currentQuestion = ""
 let currentAnswer = ""
+let currentImgSrc = ""
 let cardLetters = []
 let paddingLetters = ["가", "나", "다", "라", "마", "바", "사", "아", "자", "차", "카", "타", "파", "하"]
 
 /* layout */
 if (w > 1024) {
   document.querySelectorAll(".main").forEach(element => {
-    element.style.width = 0.7 * w + "px"
-    element.style.height = 0.7 * h + "px"
+    element.style.width = 0.3 * w + "px"
+    element.style.height = 0.85 * h + "px"
+    element.style.margin = "auto"
+    element.style.marginTop = "10vh"
+  })
+} else {
+  document.querySelectorAll(".main").forEach(element => {
+    element.style.width = 1 * w + "px"
+    element.style.height = 1 * h + "px"
   })
 }

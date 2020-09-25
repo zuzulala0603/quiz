@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/all.css" />
     <link rel="stylesheet" href="/static/css/root.css" />
     <link rel="stylesheet" href="/static/css/layouts.css" />
     <link rel="stylesheet" href="/static/css/intro.css" />
     <link rel="stylesheet" href="/static/css/round.css" />
     <link rel="stylesheet" href="/static/css/quiz.css" />
+    <link rel="stylesheet" href="/static/css/question.css" />
     <link rel="stylesheet" href="/static/css/card.css" />
     <link rel="stylesheet" href="/static/css/result.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Document</title>
   </head>
   <body>
     <section id="intro" class="main">
+      <img id="intro__img" src="/static/img/zuzu.png" alt="" srcset="" />
       <div id="playBtn">시작하기</div>
     </section>
     <section id="round" class="main">
-      <div id="round__title"></div>
+      <div id="round__title" class="animate__animated animate__fadeInDown"></div>
     </section>
     <section id="quiz" class="main">
-      <div id="quiz__question"></div>
+      <div id="quiz__question">
+        <div id="quiz__question__title"></div>
+        <img id="quiz__question__img" src="" alt="" srcset="" />
+      </div>
       <div id="quiz__answer">
         <div id="quiz__answer__useranswer"></div>
         <div id="quiz__answer__example">
@@ -29,7 +36,9 @@
             <div class="quiz__example__card card" data-example="2"></div>
             <div class="quiz__example__card card" data-example="3"></div>
             <div class="quiz__example__card card" data-example="4"></div>
-            <div id="quiz__backspace"></div>
+            <div id="quiz__backspace">
+              <i class="fas fa-arrow-left"></i>
+            </div>
           </div>
           <div class="quiz__answer__example__line">
             <div class="quiz__example__card card" data-example="5"></div>
@@ -51,7 +60,23 @@
         </div>
       </div>
     </section>
-    <section id="result" class="main">리졸트</section>
+    <section id="result" class="main">
+      <div id="result__order"></div>
+      <div id="arrow">
+        <div id="arrow__container">
+          <i id="arrow__container__icon" class="fas fa-caret-down"></i>
+        </div>
+      </div>
+      <div id="progress">
+        <div id="progress__container">
+          <span id="progress-bar"></span>
+        </div>
+      </div>
+      <div id="result__replay">
+        <div id="result__replay__title"></div>
+        <div id="result__replay__btn"></div>
+      </div>
+    </section>
     <!-- javascript -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

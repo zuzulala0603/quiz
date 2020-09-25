@@ -4,5 +4,6 @@ $.getJSON("/static/data/problem.json", data => {
   for (let i = 0; i < 5; i++) {
     questionArray.push(easyProblem[shuffledArray[i]][0])
     answerArray.push(easyProblem[shuffledArray[i]][1])
+    imgSrcArray.push(easyProblem[shuffledArray[i]][2])
   }
 })
