@@ -1,16 +1,20 @@
-let replayBtn = document.getElementById("result__replayBtn")
+function showResult() {
+  getResultData();
+  hide(quizPage);
+  hide(roundPage);
+  flex(resultPage);
+}
 
-replayBtn.addEventListener("click", () => {
-  hide(resultPage)
-  round = 0
-  shuffledArray = shuffle(basicArray)
-  initializeQuiz()
-  goToNextRound()
-})
+function getResultData() {
+  let userOrder = 99 - round * 10;
+  document.getElementById("result__order").innerHTML = `당신은 상위 ${userOrder}%입니다.`;
+  document.getElementById("progress__container").style.width = "65%";
+  document.getElementById("arrow__container").style.width = "65%";
+}
 
 function initializeQuiz() {
-  questionArray = []
-  answerArray = []
-  imgSrcArray = []
-  setQuizData()
+  questionArray = [];
+  answerArray = [];
+  imgSrcArray = [];
+  setQuizProblem();
 }

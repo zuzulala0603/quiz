@@ -1,1 +1,2 @@
-let correctAudio = new Audio("/static/sound/correct2.mp3")
+let clickAudio = new Audio("/static/sound/click.wav");
+let click2Audio = new Audio("/static/sound/click2.wav");
