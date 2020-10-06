@@ -1,4 +1,5 @@
 function settingQuiz(round) {
+  cardLetters = [];
   currentQuestion = questionArray[round];
   currentAnswer = answerArray[round];
   currentImgSrc = imgSrcArray[round];
@@ -16,6 +17,8 @@ function settingQuiz(round) {
   for (let k = 0; k < 14; k++) {
     document.querySelector(`[data-example="${k + 1}"]`).innerHTML = cardLetters[k];
   }
+
+  console.log(cardLetters);
 }
 
 quizExample.forEach((element) => {

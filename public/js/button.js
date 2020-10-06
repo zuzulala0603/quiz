@@ -10,12 +10,9 @@ submitBtn.addEventListener("click", () => {
     userAnswer = userAnswer + document.querySelector(`[data-answerlength="${i}"]`).innerHTML;
   }
   if (userAnswer == currentAnswer) {
+    correctAudio.play();
     goToNextRound();
     cardLetters = [];
-    /*  correctAudio.play(); */
-    /*     setTimeout(() => {
-      goToNextRound();
-    }, 500); */
   } else {
     showResult();
   }
