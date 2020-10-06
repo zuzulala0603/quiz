@@ -8,8 +8,29 @@
   font-weight: 900;
 }
 #result__order {
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
+
+#result__replayBtn {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #de6972;
+  color: white;
+  cursor: pointer;
+  width: 60%;
+  height: 10%;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#result__replay__btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  font-weight: bold;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 #arrow {
   color: black;
   padding-top: 10vh;

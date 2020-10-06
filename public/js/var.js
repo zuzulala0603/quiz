@@ -23,6 +23,8 @@ let quizExample = document.querySelectorAll(".quiz__example__card")
 let backspace = document.getElementById("quiz__backspace")
 let answerLength = 0
 /* quiz data */
+let easyQuiz
+let shuffledArray = []
 let basicArray = [1, 2, 3, 4, 5]
 let questionArray = ["문제"]
 let answerArray = ["정답"]

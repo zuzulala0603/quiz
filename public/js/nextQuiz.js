@@ -5,8 +5,11 @@ submitBtn.addEventListener("click", () => {
   }
   if (userAnswer == currentAnswer) {
     console.log("맞춤")
+    correctAudio.play()
     cardLetters = []
-    goToNextRound()
+    setTimeout(() => {
+      goToNextRound()
+    }, 500)
   } else {
     showResult()
     console.log("못맞춤")
