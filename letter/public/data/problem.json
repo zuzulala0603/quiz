@@ -1,0 +1,9 @@
+{
+  "easy": [
+    ["1", "바나나", "/static/img/zuzu.png"],
+    ["2", "딸기", "/static/img/zuzu.png"],
+    ["3", "포도", "/static/img/zuzu.png"],
+    ["4", "사과", "/static/img/zuzu.png"],
+    ["5", "오렌지", "/static/img/zuzu.png"]
+  ]
+}

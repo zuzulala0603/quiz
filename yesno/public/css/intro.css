@@ -1,0 +1,31 @@
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b9c6d2;
+}
+
+#intro__img {
+  margin-top: 40%;
+  width: 80%;
+  height: 30%;
+}
+
+#playBtn {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #de6972;
+  color: white;
+  cursor: pointer;
+  width: 60%;
+  height: 10%;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#playBtn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  font-weight: bold;
+}

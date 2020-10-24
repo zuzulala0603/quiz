@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+.hide {
+  display: hide;
+}
+
+.flex {
+  display: flex;
+}
+.block {
+  display: block;
+}

@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.075), 0 15px 12px rgba(0, 0, 0, 0.05);
+
+  font-size: 175%;
+  font-weight: bold;
+}
+
+.quiz__example__card {
+  width: 17%;
+  height: 70%;
+  background-color: beige;
+  border-radius: 0.5rem;
+}
+
+#quiz__backspace {
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  width: 17%;
+  height: 70%;
+  background-color: #de6972;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.075), 0 15px 12px rgba(0, 0, 0, 0.05);
+}
+
+.quiz__answer__card {
+  width: 17%;
+  height: 68%;
+  background-color: beige;
+  border-radius: 0.5rem;
+}
